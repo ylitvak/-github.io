@@ -1,4 +1,0 @@
-Section 18: Summary
-:::::::::::::::::::::::::::::::::::::
-
-This lesson cover the following topics: 1. Generate and Test is a very commonly used problem-solving method used by humans and in nature by biological evolution (similar to Genetic algorithms). 2. We need both knowledge representation and problem-solving methods together to provide reasoning to solve problems. 3. Smart generators and smart testers help prune multitude number of states that are possible due to combinatorial explosion of successor states, thereby helping solve intractable problems efficiently using limited computational resources and limited knowledge of the world as compared to dumb generators and dumb testers.

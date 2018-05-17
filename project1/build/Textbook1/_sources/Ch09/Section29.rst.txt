@@ -1,9 +1,0 @@
-Section 29: Wrap Up
-:::::::::::::::::::
-
-.. youtube:: l0gei3TuUuk
-        :height: 315
-        :width: 560
-        :align: left
-
-So today we talked about the broad process of case-based reasoning. Learning by recording cases gave us a method for case retrieval called nearest neighbor method. So we went ahead and jumped into the adaptation phase. Given an old solution to a problem, how do we adapt that old solution to a new problem? We talked about three ways of doing that. We can do it by model of the world, we can do it by rules, or we can do it by recursion. Then once we've adapted that old case, how do we then evaluate how good it was for our problem? Then after we evaluated how good it is we looked at storing it back in our memory. We want to build up a case library of past solutions, so if we've solved a new problem we will now sort that back into our case library. Then based on that we revisited the notion of case retrieval. Based on how our case library is organized, how do we retrieve a prior case that's most similar to our new problem? Now there are a lot of open issues here. For example, should we store failed cases? Should we store failed adaptations? Do we want to store them so we can avoid failing in the future? Should we ever forget cases? Can our case library ever get so big that it's intractable, and we can't really use it efficiently? Should we abstract over cases, so should we use these individual cases to develop a more abstract understanding of a concept, or should we stick the individual cases and adapt them from there? If you're interested in these questions you can over to our forums and we'll talk about it there. But we'll also be revisiting these questions throughout the rest of the course. Next time we'll talk about incremental concept learning, which takes individual cases and abstracts over them to learn some kind of higher level concepts.

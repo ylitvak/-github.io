@@ -1,9 +1,0 @@
-Section 07: Dumb Generators, Dumb Testers
-::::::::::::::::::::::::::::::::::::::::::::
-
-.. youtube:: Dvw5Z1-3OPA
-        :height: 315
-        :width: 560
-        :align: center
-
-Now we can continue to apply this method of generate and test iteratively. So we can apply it on this state and that state and see what successor states we get. If we do so, then we get a very large number of successor states. This is a problem of call many total explosion. While one was tasked with a small number of states, but the number of successor states keeps on in- creasing very rapidly. Now, the reason it is occurring here and it did not occur when we are talk, dealing with semantic networks is because here we have states like this one which have three guards and three prisoners on the same side of the bank, exactly the same state that was the initial state to begin with. This is because we have a dumb generator and a dumb tester. So this state never got pruned away, although this particular state is identical to the initial state that we started from. This method of generating test, even with a dumb generator and a dumb tester, if applied iteratively could finally lead to the goal state. In which case, we will have a path from the initial state all the way to the goal state, but this will be computationally very inefficient. This is because we have a dumb generator and a dumb tester. So the question now becomes, can we make a smarter generator and a smarter tester? Before we make a smarter generator and a smarter tester, we should note that generate and test is a very powerful problem solving method.        

@@ -1,8 +1,0 @@
-Section 09: Ambiguity in Verbs
-:::::::::::::::::::::::::::::::::::::::::::::::::
-.. youtube:: s6e1Aycar8A
-        :height: 315
-        :width: 560
-        :align: left
-
-Of course we don’t just see ambiguity in propositions, we also it in words. David, can you think of ambiguity in a word? To go back to our throw example, I might say I was wondering why the ball was getting bigger and then it hit me. The word hit is ambiguous because it could either mean occur or strike. It occurred to me why the ball was getting bigger, or the ball physically struck me. Take another example. It’s hard to explain puns to kleptomaniacs because they al- ways take things literally. The humor here is that take could either mean interpret, as in they al- ways interpret things literally, or it could mean physically pick up and remove. As in they literally always take things. In fact, many puns derive their humor from the fact that a word in the sentence can play two different roles in the sentence at once. And the sentence still makes sense. Did you know that I was going to say this will be much fun? The goal going forward is to look at how agents will resolve some ambiguities. When one correct meaning, and only one correct meaning is possible. Not however, that we might build our character with a bit of humor. Perhaps one form of humor is when a single sentence can be made to fill multiple grammatical simultaneously.
