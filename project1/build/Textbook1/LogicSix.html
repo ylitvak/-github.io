@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Section 26: Implication Elimination &#8212; Runestone Interactive Overview</title>
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/runestonebase.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/clickable.js"></script>
+    <script type="text/javascript" src="_static/timedclickable.js"></script>
+    <script type="text/javascript" src="_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="_static/fitb.js"></script>
+    <script type="text/javascript" src="_static/timedfitb.js"></script>
+    <script type="text/javascript" src="_static/reveal.js"></script>
+    <script type="text/javascript" src="_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="_static/parsons.js"></script>
+    <script type="text/javascript" src="_static/timedparsons.js"></script>
+    <script type="text/javascript" src="_static/animationbase.js"></script>
+    <script type="text/javascript" src="_static/mchoice.js"></script>
+    <script type="text/javascript" src="_static/timedmc.js"></script>
+    <script type="text/javascript" src="_static/timed.js"></script>
+    <script type="text/javascript" src="_static/shortanswer.js"></script>
+    <script type="text/javascript" src="_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="_static/pytutor.js"></script>
+    <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="_static/codemirror.js"></script>
+    <script type="text/javascript" src="_static/xml.js"></script>
+    <script type="text/javascript" src="_static/css.js"></script>
+    <script type="text/javascript" src="_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="_static/python.js"></script>
+    <script type="text/javascript" src="_static/javascript.js"></script>
+    <script type="text/javascript" src="_static/activecode.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/clike.js"></script>
+    <script type="text/javascript" src="_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="_static/livecode.js"></script>
+    <script type="text/javascript" src="_static/clike.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/datafile.js"></script>
+    <script type="text/javascript" src="_static/dragndrop.js"></script>
+    <script type="text/javascript" src="_static/timeddnd.js"></script>
+    <script type="text/javascript" src="_static/poll.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="_static/rangy-core.js"></script>
+    <script type="text/javascript" src="_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="_static/user-highlights.js"></script>
+    <script type="text/javascript" src="_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Section 31: A More Complex Proof" href="LogicSeven.html" />
+    <link rel="prev" title="Section 21: Exercise: Associative Property" href="LogicFive.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Textbook1';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'Textbook1';
+  eBookConfig.runestone_version = '2.7.12';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="index.html">Logic</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='index.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/Textbook1/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/Textbook1/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=Textbook1&page=LogicSix'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Section 26: Implication Elimination</a></li>
+<li><a class="reference internal" href="#section-27-rules-of-inference">Section 27: Rules of Inference</a></li>
+<li><a class="reference internal" href="#section-28-prove-harry-is-a-bird">Section 28: Prove Harry is a bird</a></li>
+<li><a class="reference internal" href="#section-29-universal-quantifiers">Section 29: Universal Quantifiers</a></li>
+<li><a class="reference internal" href="#section-30-a-simple-proof">Section 30: A Simple Proof</a></li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - Section 21: Exercise: Associative Property" data-toggle="tooltip">
+    <a href="LogicFive.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Section 31: A More Complex Proof' data-toggle="tooltip" >
+    <a href="LogicSeven.html" >
+      <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="section-26-implication-elimination">
+<h1>Section 26: Implication Elimination<a class="headerlink" href="#section-26-implication-elimination" title="Permalink to this headline">¶</a></h1>
+<iframe src="http://www.youtube.com/embed/RKKsDIOLBeg"     width="560" height="315" frameborder="0"     webkitAllowFullScreen mozallowfullscreen allowfullscreen     class="align-left" seamless ></iframe><a class="reference internal image-reference" href="_images/Slide261.PNG"><img alt="Implication Elimination" class="align-center" src="_images/Slide261.PNG" style="width: 350px; height: 200px;" /></a>
+<p>As we go ahead and start applying rules of inferences to sentences in a knowledge base. We’ll find it convenient to rewrite the sentences in a knowledge base. And sometimes it will be very useful to rewrite these sentences in the knowledge base in a manner that eliminates the implications in a sentence. And this is how we can eliminate the implication. If a implies b, than we can rewrite it as not a or b. We know this because the truth value of a implies b is exactly the same as your truth value of not a or b. We can take an example here. Supposing that we are given feathers imply bird. Then we can rewrite this as not feathers or bird. And intuitively, you can see the truth value of this. It is either the animal does not have feathers or, it is a bird. In a little bit, we will see that this is a important rewrite rule in doing certain kinds of logical proofs.</p>
+</div>
+<div class="section" id="section-27-rules-of-inference">
+<h1>Section 27: Rules of Inference<a class="headerlink" href="#section-27-rules-of-inference" title="Permalink to this headline">¶</a></h1>
+<iframe src="http://www.youtube.com/embed/I0zeq5ew1Yk"     width="560" height="315" frameborder="0"     webkitAllowFullScreen mozallowfullscreen allowfullscreen     class="align-left" seamless ></iframe><a class="reference internal image-reference" href="_images/Slide27.PNG"><img alt="Rules of Inference" class="align-center" src="_images/Slide27.PNG" style="width: 350px; height: 200px;" /></a>
+<p>Okay, now that we have looked at how to write sentences in the language of logic and also looked at how to rewrite the sentences, for example by eliminating implication, let us now look at what kinds of rules of inference can be implied and how can we apply them. One rule of inference is called Modus Ponens, and many of you may already be familiar with it. If I’m given a sentence s1 which says p implies q, and another sentence S2 which says p, then I could infer q from it. p implies q and p, therefore q, this symbol stands for therefore. Let’s take an example, so imagine that I’m given that feathers imply bird. And I’m also given that feathers is true. Then, I can infer that bird must be true. Now we can connect this to a logic agent. Imagine that there is a robot and I bootstrap that robot with the knowledge that feathers imply bird. Now the robot goes to a new region in the country and finds some animal which has feathers. The robot cannot conclude that that particular animal is a bird. So the first sentence came from something that I had bootstrapped into the knowledge of the robot. The second sentence came from the percepts of the robot. And the third sentence came from its logical inferencing. And this is how the robot can, in fact, go about making sound, complete inferences that are guaranteed to be correct. Here is a second rule of inference, this is called Modus Tollens. So again I have sentence S1, p implies q, and I have a second sentence, not q. And therefore, I can inference that not p. So let us take an example of Modus Tollens. Imagine that there is a robot that has been programmed, bootstrapped with the knowledge feathers imply bird. So that’s part of its knowledge base already. This robot goes to a new country and is talking to the people in that country, and the people tell the robot a story about an animal that is not a bird. Therefore the robot may infer that that animal must not have feathers. So this is coming from the knowledge that is bootstrapped. This is coming from the new percept from the story. And this is coming from the logical inference. And once again, the logical inference is guaranteed to be sound and complete. You may already be familiar with this line of reasoning because this is another way of phrasing a contrapositive, that we see in other areas of logic.</p>
+</div>
+<div class="section" id="section-28-prove-harry-is-a-bird">
+<h1>Section 28: Prove Harry is a bird<a class="headerlink" href="#section-28-prove-harry-is-a-bird" title="Permalink to this headline">¶</a></h1>
+<iframe src="http://www.youtube.com/embed/K-TL-yR97nI"     width="560" height="315" frameborder="0"     webkitAllowFullScreen mozallowfullscreen allowfullscreen     class="align-left" seamless ></iframe><a class="reference internal image-reference" href="_images/Slide28-01.PNG"><img alt="Prove Harry is a bird 1" class="align-center" src="_images/Slide28-01.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide28-02.PNG"><img alt="Prove Harry is a bird 2" class="align-center" src="_images/Slide28-02.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide28-03.PNG"><img alt="Prove Harry is a bird 3" class="align-center" src="_images/Slide28-03.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide28-04.PNG"><img alt="Prove Harry is a bird 4" class="align-center" src="_images/Slide28-04.PNG" style="width: 350px; height: 200px;" /></a>
+<p>Now you can see how we apply these rules of inferences on sentences in a knowledge base or philosophical agent to prove all kinds of sentences. See, imagine that an AI agent begins with the knowledge that if an animal has feathers, it implies that the animal is a bird. Now it comes across Harry, who does have feathers. By Modus Ponens, therefore the AI agent can conclude that Harry is a bird. This completes the proof for our original goal of proving that Harry is a bird. Now let us suppose that a goal is to prove that Buzz does not have feathers. Once again, imagine an AI agent which begins with the knowledge that if an animal has feathers, it implies that the animal has, is a bird. The agent comes across a animal, which is not a bird. Then by Modus Tollens it can infer that buzz must not have feathers. This completes the proof for of a original goal of proving that buzz does not have feathers. Okay. So now, we have looked at two ways of proving the truth value of various sentences. The first way was just through truth tables. I could have sentences and logic. Then I could write another sentence. And ask myself, what, what is the truth value of this sentence? I could construct a truth table for that sentence, composed of the truth values of all the predicates, with some of which might be coming from earlier sentences. The second way in which we have seen how we can prove the truth values of sentences and logic is by applying these rules of inferences like modus ponens and modus tollens. This is very powerful, and in fact the power of this logic has been known since before the birth of AI. As computer scientists however, we’ll analyze this power in a slightly different way. Yes, we can use method of truth tables to construct a truth table for any arbitrary sentence. However, the sentence was complicated. Then the truth table very soon will become very complex. Computationally, that is infeasible for very long, large sentences. Similarly, yes we can apply simply modus ponens and modus tollens to find the truth value of many sentences. But if the knowledge base consisted of a very large number of sentences, instead of just one or two sentences, then the kinds of inferences, number of inferences I can draw from those sentences simply by applying modus ponens and modus tollens, will be very large. Or if I had to find the truth value of a single sentence, then the different pathways I could take in order to get to the truth value of those sentences can make for long, large problem space. So while these methods of proving the truth with your sentences and logic have been around for a long time. These methods are not computationally feasible. At least not for complex tasks. At least not for agents that have only limited computational resources and from who we want near realtime performance.</p>
+</div>
+<div class="section" id="section-29-universal-quantifiers">
+<h1>Section 29: Universal Quantifiers<a class="headerlink" href="#section-29-universal-quantifiers" title="Permalink to this headline">¶</a></h1>
+<iframe src="http://www.youtube.com/embed/GeWyQmDAvmA"     width="560" height="315" frameborder="0"     webkitAllowFullScreen mozallowfullscreen allowfullscreen     class="align-left" seamless ></iframe><a class="reference internal image-reference" href="_images/Slide29-01.PNG"><img alt="Universal Quantifiers 1" class="align-center" src="_images/Slide29-01.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide29-02.PNG"><img alt="Universal Quantifiers 2" class="align-center" src="_images/Slide29-02.PNG" style="width: 350px; height: 200px;" /></a>
+<p>Before we show you, a computationally more feasible way of proving theorems in logic, or proving the truth value of sentence in logic. We should point out that so far, we have been using only propositional logic. Propositional logic is sometimes also called the zero-if order logic. The key aspect of propulsion logic, is that it does not have any variables. So as an example, I may have a sentence that says if the animal Lays-eggs, and the animal Flies, then the animal is a Bird. And here I’m talking about a specific animal. Well, sometimes I might want to talk about, animals in general, any animal, all animals. In that case, I would want to introduce a variables in it. So in first audilogic, otherwise known as predicate calculus, I might want to say something like. If x Lays-eggs and x Flies, then x is a Bird. Which has a set form very similar to form here, except that instead of animal, I now have a variable. Now, I have a variable here. But, I must also specify the range of the variable. And what I really want to say here is for all animals. Therefore I’ll introduce a new quantifier over the variable x. This quantifier is called Universal Quantifier. It is denoted with the symbol, this is the symbol for Universal Quantifier. And this says now for all x, if x Lays-eggs, and x Flies it implies that x is a Bird. One thing to note here is that, I could have rewritten this sentence, with the Universal Quantifier back into proposition logic. But, having lots of sentences like this. In proposition logic. So I could’ve said Lays-eggs (animal) one, Flies (animal) one implies Bird (animal) one, Lays-eggs (animal) two, and Flies (animal) two implies Bird (animal) two. And so on and so forth, for each and every animal that is possible. But, by writing it in the form of a variable, a Universal Quantifier statement, I can reduce the number of sentences I have to write into just one sentence. So we have introduced variables, and we have talked at least about one quantifier so far, the Universal Quantifier, that applies for all values that that variable can take. Sometimes I might want to specify a different range of the variable. Not all values of the variable can take, but, at least some values of the variable I can take. So consider again, this sentence, here the animal is [referring] a specific animal. Now let’s look at the second sentence on this screen. And this sentence is the variable y. It says if y Layseggs and y Flies then it implies that y is a Bird. This sentence is a very similar form, to the previous except for the variable y. I can specify the value, that the variable y can take. This time I want to specify not that this sentence is true for all values of y, for all animals, but simply that it is true for. Some at least one animal in which case I’ll use an Existential Quantifier. Here is the symbol for an Existential Quantifier, this Existential Quantifier says that there is at least one animal, for which this sentence happens to be true.</p>
+</div>
+<div class="section" id="section-30-a-simple-proof">
+<h1>Section 30: A Simple Proof<a class="headerlink" href="#section-30-a-simple-proof" title="Permalink to this headline">¶</a></h1>
+<iframe src="http://www.youtube.com/embed/mp6ju2OOHsg"     width="560" height="315" frameborder="0"     webkitAllowFullScreen mozallowfullscreen allowfullscreen     class="align-left" seamless ></iframe><a class="reference internal image-reference" href="_images/Slide30-01.PNG"><img alt="A Simple Proof 1" class="align-center" src="_images/Slide30-01.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide30-02.PNG"><img alt="A Simple Proof 2" class="align-center" src="_images/Slide30-02.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide30-03.PNG"><img alt="A Simple Proof 3" class="align-center" src="_images/Slide30-03.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide30-04.PNG"><img alt="A Simple Proof 4" class="align-center" src="_images/Slide30-04.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide30-05.PNG"><img alt="A Simple Proof 5" class="align-center" src="_images/Slide30-05.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide30-06.PNG"><img alt="A Simple Proof 6" class="align-center" src="_images/Slide30-06.PNG" style="width: 350px; height: 200px;" /></a>
+<p>Okay, let us set aside predicate calculus, and return back to population logic. Recall that we had found ways of writing sentences in population chronologic. We had found rules of inferences, we could prove theorems. We could find the truth value of new sentences. However, we found that those methods were computationally, not very efficient. So AI has developed more efficient methods. One of those methods is called Resolution Theorem Proving. Let us take an example to illustrate how resolution theorem proving works. So, imagine there is a robot, and this robot. Is working on an assembly line, it’s a factory robot, and on the assembly line are coming weird kind of widgets. The robot’s task is to pick up each widget, as it comes on the assembly line and put it in a truck. However, there are some humans in this factory. Who play a joke on the robot once in a while, they glued the widget to the assembly line belt, so that, when the robot tries to move it, it can not move it. But the robot is a smart robot, this is a logical agent, so when it can not move it. It uses its logical reasoning, to figure out that the boxes aren’t liftable. And the moment it knows that the boxes aren’t liftable, it lets go of the box and moves onto the next one.</p>
+<p>Everyone got the story? All right. So let us suppose that the robot begins with some knowledge in its knowledge base. And this knowledge in its knowledge base, that it begins with says that if cannot move, then it implies that not liftable. Now, it tries to move the box, the next box in the widget. It’s biceps tells it, it can not move. It needs to prove that it’s not liftable. And of course this is a preview example and I’m sure you’ll understand it. You can put essentially a class of the modest components to prove that it’s not liftable. If p then q, p therefore you can infer q. But, we’ll use this example to show. How does resolution theorem proving works? So, the first step in resolution theorem proving is, to convert every sentence into a conjunctive normal form. A conjunctive normal form of a sentence, can have one of three conditions. It can have a literal. That can be either a positive atom, or a negative atom. It can have this disjunctional literals like here can-move, or not liftable, or it can have a conjunction of disjunctional request. In this example the third condition doesn’t occur. So, the first thing we must do is to take the first sentence. The negation of not move implies not liftable. And remove the implication, because an implication cannot occur in conjunctive normal form. So the first thing we need to do is, to rewrite the sentence, the first sentence, to remove the implication. Because the implication cannot occur in a conjunctive normal form. So now we use the. Implication elimination rewrite rule. To rewrite this in the form of can-move, or not liftable. Remember that was alpha implies beta becomes, not alpha or beta. So the not of negation of can-move becomes can-move or not liftable. So, we have done it for the first sentence. This is now in a conjuncted normal form. We can do the same thing for the second sentence, but wait, the second sentence already is in a conjunctive form. We don’t have to do anything. Now, the robot wants to prove that their box is not liftable. Resolution to improving, is like proof by refutation. To do proof by refutation we will take the negation of what we want to prove. We wanted to prove not liftable would take its negation, which makes it liftable. Okay, so now we got three sentences. This one’s the first sentence that the robot was bootstrap with, you’ve just converted to a conductor normal form. This was the sentence that came from a it saw that the box cannot move. And this is the sentence throughout the negation of the sentence, the refutation of the sentence that it wants to prove. So we have three sentences now. The first sentence came from the bootstrapping, of the robot’s knowledge base. This is the axiom that the robot assumes to be true. The second sentence came from its percepts. The robot tried to move the box, it could not move it. The third sentence is coming from taking the negation of what the robot wants to prove. It wants to prove it’s not liftable. So, it’s going to take this negation of it and then, sure that it’s going to lead to a null condition that we’ll view as a contradiction. The resolution for improving lawless begin with a liftable in the sentence that we want to prove. So here that sentence is liftable, and we’ll look for a sentence that contains a negation of liftable in this sentence that we want to prove. So the sentence here was liftable, sentence S1 contains liftable which is a negation of that so we pick S1 and not S2. Note, how efficient it was to decide what sentence on the knowledge based to go to. In sentence container negation of the liftable. So, liftable and not liftable can not both be true. We know that, and therefore we can eliminate them. This is called resolution. We resolve unliftable and we remove them from the sentences. Now, we were sentence as S1, that leaves us can move. So, now we pick a sentence, that has the negation of literal can-move. Sentence S2 has a negation of that, and we can resolve one can move, they can not both be true. When we resolve on both of them, those get eliminated as well. And now we see we’ve reached another condition. This null condition represents a contradiction, and now we can infer that liftable cannot be true, therefore not liftable is true. The robot has proved not liftable. And in this case it appears as a resolution theorem improving is more complex there’s more respondents. In general it is not. It just appears here, because this condition happened to fulfil the form of more respondents directly. In general, deciding on which sentence to apply the modest ponents on, and how to combine those groups of inferences don’t suddenly become [turns out to be computationally] harder than deciding how to apply the resolution and improvements.</p>
+
+<div data-childcomponent="units1" class="explainer ac_section alert alert-warning">
+
+<textarea data-component="activecode" id=units1 data-lang="python"    data-timelimit=25000  data-codelens="true" data-audio=''     >
+def prolog_prove(goals, db):
+
+        if goals:
+                vars = []
+                for goal in goals:
+                        vars.extend(goal.get_vars())
+                db['display_bindings'] = display_bindings
+                prove_all(goals + [Relation('display_bindings', vars)], {}, db)
+        print 'No.'
+</textarea>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - Section 21: Exercise: Associative Property' data-toggle="tooltip">
+    <a href="LogicFive.html" >
+      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="LogicFive.html" ></a>
+  
+  <li id="relations-next" class="navLink" title='Next Section - Section 31: A More Complex Proof' data-toggle="tooltip" >
+    <a href="LogicSeven.html" >
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="LogicSeven.html" >Next Section - Section 31: A More Complex Proof</a>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 animesh.
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 2.7.12.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

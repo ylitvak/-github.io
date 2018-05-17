@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Section 31: A More Complex Proof &#8212; Runestone Interactive Overview</title>
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/runestonebase.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/clickable.js"></script>
+    <script type="text/javascript" src="_static/timedclickable.js"></script>
+    <script type="text/javascript" src="_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="_static/fitb.js"></script>
+    <script type="text/javascript" src="_static/timedfitb.js"></script>
+    <script type="text/javascript" src="_static/reveal.js"></script>
+    <script type="text/javascript" src="_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="_static/parsons.js"></script>
+    <script type="text/javascript" src="_static/timedparsons.js"></script>
+    <script type="text/javascript" src="_static/animationbase.js"></script>
+    <script type="text/javascript" src="_static/mchoice.js"></script>
+    <script type="text/javascript" src="_static/timedmc.js"></script>
+    <script type="text/javascript" src="_static/timed.js"></script>
+    <script type="text/javascript" src="_static/shortanswer.js"></script>
+    <script type="text/javascript" src="_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="_static/pytutor.js"></script>
+    <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="_static/codemirror.js"></script>
+    <script type="text/javascript" src="_static/xml.js"></script>
+    <script type="text/javascript" src="_static/css.js"></script>
+    <script type="text/javascript" src="_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="_static/python.js"></script>
+    <script type="text/javascript" src="_static/javascript.js"></script>
+    <script type="text/javascript" src="_static/activecode.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/clike.js"></script>
+    <script type="text/javascript" src="_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="_static/livecode.js"></script>
+    <script type="text/javascript" src="_static/clike.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/datafile.js"></script>
+    <script type="text/javascript" src="_static/dragndrop.js"></script>
+    <script type="text/javascript" src="_static/timeddnd.js"></script>
+    <script type="text/javascript" src="_static/poll.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="_static/rangy-core.js"></script>
+    <script type="text/javascript" src="_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="_static/user-highlights.js"></script>
+    <script type="text/javascript" src="_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Section 36: Exercise: Proof III" href="LogicEight.html" />
+    <link rel="prev" title="Section 26: Implication Elimination" href="LogicSix.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Textbook1';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'Textbook1';
+  eBookConfig.runestone_version = '2.7.12';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="index.html">Logic</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='index.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/Textbook1/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/Textbook1/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=Textbook1&page=LogicSeven'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Section 31: A More Complex Proof</a></li>
+<li><a class="reference internal" href="#section-32-exercise-proof-i">Section 32: Exercise: Proof I</a></li>
+<li><a class="reference internal" href="#section-33-exercise-proof-i">Section 33: Exercise: Proof I</a></li>
+<li><a class="reference internal" href="#section-34-exercise-proof-ii">Section 34: Exercise: Proof II</a></li>
+<li><a class="reference internal" href="#section-35-exercise-proof-ii">Section 35: Exercise: Proof II</a></li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - Section 26: Implication Elimination" data-toggle="tooltip">
+    <a href="LogicSix.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Section 36: Exercise: Proof III' data-toggle="tooltip" >
+    <a href="LogicEight.html" >
+      <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="section-31-a-more-complex-proof">
+<h1>Section 31: A More Complex Proof<a class="headerlink" href="#section-31-a-more-complex-proof" title="Permalink to this headline">¶</a></h1>
+<iframe src="http://www.youtube.com/embed/5cLJPqvlK0g"     width="560" height="315" frameborder="0"     webkitAllowFullScreen mozallowfullscreen allowfullscreen     class="align-left" seamless ></iframe><a class="reference internal image-reference" href="_images/Slide31-01.PNG"><img alt="A More Complex Proof 1" class="align-center" src="_images/Slide31-01.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide31-02.PNG"><img alt="A More Complex Proof 2" class="align-center" src="_images/Slide31-02.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide31-03.PNG"><img alt="A More Complex Proof 3" class="align-center" src="_images/Slide31-03.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide31-04.PNG"><img alt="A More Complex Proof 4" class="align-center" src="_images/Slide31-04.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide31-05.PNG"><img alt="A More Complex Proof 5" class="align-center" src="_images/Slide31-05.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide31-06.PNG"><img alt="A More Complex Proof 6" class="align-center" src="_images/Slide31-06.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide31-07.PNG"><img alt="A More Complex Proof 7" class="align-center" src="_images/Slide31-07.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide31-08.PNG"><img alt="A More Complex Proof 8" class="align-center" src="_images/Slide31-08.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide31-09.PNG"><img alt="A More Complex Proof 9" class="align-center" src="_images/Slide31-09.PNG" style="width: 350px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/Slide31-10.PNG"><img alt="A More Complex Proof 10" class="align-center" src="_images/Slide31-10.PNG" style="width: 350px; height: 200px;" /></a>
+<p>Let us make this example a little bit more complicated. Complicated enough that it cannot be proven simply by applying one instance of modus ponens. Imagine that a robot proved to itself that this box is not liftable. And the humans in the factory who were trying to make fun of the robots said to the robot well, the reason it’s not liftable is not because it’s not movable, but because your battery is not working. So now the situation is more complicated, the robot must also check its battery. So now the robot begins with slightly different knowledge in this knowledge case. So suppose that the knowledge in its knowledge basis, cannot move and battery full means it’s not liftable. It finds from its concept. Again, it cannot move, so it checks its battery, and it checks its battery and it finds that the battery’s full. So then two new sentences that get written in the knowledge base. By the knowledge base contains three sentences. As earlier, the resolutions you’re improving, the agent must convert all these sentences, in its knowledge base into a conjunctive normal form. That means that the sentences can contain a literal or a disjunctional literal or a conjunction of disjunctional literals. So if we begin by removing the implication from sentence one, because an implication cannot occur in a conjunctive normal form. So when we remove implication from the first sentence we get this sentence. Where the sentence is not yet satisfactory, it is not yet a conjunctive normal form because this is a disjunction of conjunctions. And what we want are conjunctions of disjunctions. So we apply the deMorgan’s Law and now we get the following sentence. We’re simply taking the negation inside which flips the conjunction into a disjunction and now we have three liftables connected with disjunctions and this is a conjunctive normal form, disjunctional liftable. So now we have in the knowledge base, three sentences, all three of them in the conductor normal form, either literals or disjunctional literals. Recall that the robot wanted to prove not liftable. So it takes the negation of that, this is again proof by refutation, so it considers liftable. So now this knowledge base has four sentences. These four sentences coming from the negation of what it wants to prove. Once again the reasoning begins by the literal that it wants to prove, in this case liftable. It finds a sentence in which the negation of literal is true. So once again, we begin with the sentence, S4 because that is what we want to prove. And we find a sentence in the knowledge base which contains a literal which is a negation of the literal in this sentence S4 that we want to prove. We resolve on this because they both cannot be true, and resolution here simply means that we drop them. Now, in the sentence S1 that is under consideration currently, we have two literals. We can begin with either one of them. Let us begin with not battery full. We’ll try to find</p>
+<p>a sentence which contains a negation of this particle electrode. There is a sentence, S3, which is a negation of this so we resolve on this. Battery full and not battery full because they both cannot be true. We’ll drop them. Now in sentence S1 we are left with just one literal, can-move. We can try to find a sentence in the knowledge base which contains a negational judge literal. Here it is, and so we can resolve on them. And we resolve on them, we drop them. And once we drop them, then we have a null condition, which stands for a contradiction. So we reached a contradiction, therefore the assumption that this was liftable cannot be true, therefore not liftable is true, and we have just shown that resolution theorem proving in this case proves what the robot wanted to prove. One important point to note here is the issue of focus of attention. Often when the problem space is very complex, for example, when the number of sentences is really large, the sentences are very complex, it can become really hard for the logical agent to decide what to focus on. But because we have converted everything in a conjunctive normal form, and because resolution theorem proving is making use of resolution, therefore at any particular time, the logical agent knows exactly what to focus on. You always begin with this literal, you always try to find a sentence which contains this negation. You always resolve on that. You take the remaining literal in the sentence and proceed forward. This focus of attention, this computational efficiency of resolution theorem proving is arising because a [of what are called] called horn clauses. A horn clause, is a disjunction that contains at most one positive literal. This is happening in S1. This is a disjunction that contains at most one positive recall. This is a negative recall, this is a negative recall, and the fact that it contains just one positive recall, is a very powerful idea because that’s where the focus of attention comes from.</p>
+</div>
+<div class="section" id="section-32-exercise-proof-i">
+<h1>Section 32: Exercise: Proof I<a class="headerlink" href="#section-32-exercise-proof-i" title="Permalink to this headline">¶</a></h1>
+<iframe src="http://www.youtube.com/embed/mzZLJBRVO4o"     width="560" height="315" frameborder="0"     webkitAllowFullScreen mozallowfullscreen allowfullscreen     class="align-left" seamless ></iframe><a class="reference internal image-reference" href="_images/Slide32.PNG"><img alt="Exercise Proof I" class="align-center" src="_images/Slide32.PNG" style="width: 350px; height: 200px;" /></a>
+<p>Let us do an exercise together to make sure that we get rich solutions for improving. So consider this sentence if an animal has wings and does not have fur, it is a bird. Write this sentence down in formal logic. You can use the predicates, has-wings, has-fur, and bird.</p>
+</div>
+<div class="section" id="section-33-exercise-proof-i">
+<h1>Section 33: Exercise: Proof I<a class="headerlink" href="#section-33-exercise-proof-i" title="Permalink to this headline">¶</a></h1>
+<iframe src="http://www.youtube.com/embed/NjDE4znrTaY"     width="560" height="315" frameborder="0"     webkitAllowFullScreen mozallowfullscreen allowfullscreen     class="align-left" seamless ></iframe><a class="reference internal image-reference" href="_images/Slide33.PNG"><img alt="Exercise Proof I" class="align-center" src="_images/Slide33.PNG" style="width: 350px; height: 200px;" /></a>
+<p>David, what did you write? So starting at the beginning, has wings becomes the predicate has wings. We’re doing a conjunction so and, does not have fur, so not has fur, those two things imply that it’s a bird. That’s good, David. Now, let us put this in a form, in a conjunctive normal form that we can use in resolution theorem proving.</p>
+</div>
+<div class="section" id="section-34-exercise-proof-ii">
+<h1>Section 34: Exercise: Proof II<a class="headerlink" href="#section-34-exercise-proof-ii" title="Permalink to this headline">¶</a></h1>
+<iframe src="http://www.youtube.com/embed/hhaeBmvhHrQ"     width="560" height="315" frameborder="0"     webkitAllowFullScreen mozallowfullscreen allowfullscreen     class="align-left" seamless ></iframe><a class="reference internal image-reference" href="_images/Slide34.PNG"><img alt="Exercise Proof II" class="align-center" src="_images/Slide34.PNG" style="width: 350px; height: 200px;" /></a>
+<p>So since an indication cannot occur in a conducted normal form, we must eliminate the implication. So please eliminate the implication from this sentence, and rewrite it in this box.</p>
+</div>
+<div class="section" id="section-35-exercise-proof-ii">
+<h1>Section 35: Exercise: Proof II<a class="headerlink" href="#section-35-exercise-proof-ii" title="Permalink to this headline">¶</a></h1>
+<iframe src="http://www.youtube.com/embed/RZnZaXTGZ98"     width="560" height="315" frameborder="0"     webkitAllowFullScreen mozallowfullscreen allowfullscreen     class="align-left" seamless ></iframe><a class="reference internal image-reference" href="_images/Slide35.PNG"><img alt="Exercise Proof II" class="align-center" src="_images/Slide35.PNG" style="width: 350px; height: 200px;" /></a>
+<p>What did you get David? So this is a little bit more complicated. We know that from our earlier formula if a implies b, then to rewrite it with implicational elimination we write, not a or b. So or b is pretty straightforward, or bird. We take the not of the conjunction over here and say not has wings and not has fur. Now some of you may have jumped straight to writing this in full conjunctive normal form, but now we’re going to move on and do that last step.</p>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - Section 26: Implication Elimination' data-toggle="tooltip">
+    <a href="LogicSix.html" >
+      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="LogicSix.html" ></a>
+  
+  <li id="relations-next" class="navLink" title='Next Section - Section 36: Exercise: Proof III' data-toggle="tooltip" >
+    <a href="LogicEight.html" >
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="LogicEight.html" >Next Section - Section 36: Exercise: Proof III</a>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 animesh.
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 2.7.12.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
